@@ -1,2 +1,2 @@
-# Structure_de_donn-es_cloud
+# Structure_de_données_cloud
 Repo for our web applicattion and python scripts used during the semester.
