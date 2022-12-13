@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Views for Stats dataset</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+</head>
+<body>
+<h1>Data Structure</h1>
+
+<p>Select a function :</p></h2>
+
+
+<form action="http://127.0.0.1:5000/DataAnalyst/Ru1">
+    <input type="submit" value="Ru1" />
+</form>
+<form action="http://127.0.0.1:5000/DataAnalyst/Ru2">
+    <input type="submit" value="Ru2" />
+</form>
+<form action="http://127.0.0.1:5000/DataAnalyst/Ru3">
+    <input type="submit" value="Ru3" />
+</form>
+<form action="http://127.0.0.1:5000/DataAnalyst/Ru4">
+    <input type="submit" value="Ru4" />
+</form>
+
+
+{% for table in tables %}
+            {{titles[loop.index]}}
+            {{ table|safe }}
+{% endfor %}
+
+
+</body>
+</html>
